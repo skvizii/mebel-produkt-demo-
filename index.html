@@ -3,64 +3,196 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f3f0e9">
-<meta name="description" content="Демонстрационная концепция сайта мебельного бренда Мебель Продукт. Мягкая мебель для современного интерьера.">
-<title>Мебель Продукт — мягкая мебель</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f7f6f2">
+<meta name="description" content="Мебель Продукт — мягкая мебель в Казани. Диваны, кровати и стулья.">
+<title>Мебель Продукт — мягкая мебель в Казани</title>
 <style>
-:root{--paper:#f3f0e9;--ink:#22251f;--muted:#77796f;--line:#d9d5ca;--olive:#606a4d;--orange:#c66a43;--white:#fffefa;--serif:'Playfair Display',Georgia,serif;--sans:'Manrope',Arial,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.demo{background:#252820;color:#f8f5ec;text-align:center;padding:10px 18px;font-size:10px;letter-spacing:.13em;text-transform:uppercase}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}.header{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;font-size:17px;letter-spacing:-.06em;line-height:1}.brand span{display:block;font-size:9px;font-weight:600;letter-spacing:.22em;color:var(--muted);margin-top:7px}.nav{display:flex;gap:34px;font-size:12px;color:#55584f}.nav a:hover,.footer a:hover{color:var(--orange)}.head-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;background:var(--ink);color:white;font-size:11px;font-weight:700;transition:.25s;border:1px solid var(--ink)}.head-cta:hover,.btn:hover{background:var(--olive);border-color:var(--olive);transform:translateY(-2px)}.menu{display:none;background:none;border:0;font-size:24px}.hero{padding:56px 0 74px;display:grid;grid-template-columns:.84fr 1.16fr;gap:42px;align-items:center}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);font-weight:800;display:flex;align-items:center;gap:12px}.eyebrow:before{content:'';width:28px;height:1px;background:var(--orange)}h1{font-size:clamp(46px,6vw,82px);line-height:.99;letter-spacing:-.075em;margin:28px 0 22px;font-weight:600}h1 em{font-family:var(--serif);font-weight:500;letter-spacing:-.06em;color:var(--olive)}.hero-copy{max-width:420px;color:var(--muted);font-size:14px;line-height:1.9}.hero-actions{display:flex;align-items:center;gap:22px;margin-top:34px}.text-link{font-size:11px;font-weight:800;border-bottom:1px solid var(--orange);padding-bottom:5px}.hero-photo{height:570px;position:relative;overflow:hidden;background:#d4d0c6}.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}.photo-tag{position:absolute;bottom:22px;left:22px;background:var(--white);padding:14px 18px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.hero-index{position:absolute;right:22px;top:22px;color:white;font-size:10px;letter-spacing:.18em}.section{padding:92px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:38px}.kicker{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);font-weight:800}.section h2{font-size:clamp(34px,4.5vw,56px);letter-spacing:-.07em;line-height:1.05;font-weight:600;margin:14px 0 0}.section h2 em{font-family:var(--serif);font-weight:500}.section-intro{max-width:320px;color:var(--muted);font-size:12px;line-height:1.8}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:var(--white);min-width:0}.product-image{height:330px;overflow:hidden;background:#dedbd3}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.product:hover img{transform:scale(1.04)}.product-info{padding:22px 22px 24px}.product-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.product h3{font-size:18px;letter-spacing:-.04em;margin:0;font-weight:700}.product small{color:var(--orange);font-size:9px;letter-spacing:.12em;text-transform:uppercase}.product p{font-size:11px;line-height:1.7;color:var(--muted);margin:12px 0 0}.manifesto{background:#283027;color:#f4f0e7;padding:92px 0;position:relative;overflow:hidden}.manifesto:after{content:'М';position:absolute;font-family:var(--serif);font-size:480px;line-height:1;right:4%;top:-70px;color:rgba(255,255,255,.035)}.manifesto-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.manifesto h2{font-size:clamp(40px,5vw,66px);line-height:1.04;letter-spacing:-.07em;font-weight:500;margin:18px 0}.manifesto h2 em{font-family:var(--serif);color:#d18a66}.manifesto p{color:#c1c4b8;font-size:13px;line-height:1.9;max-width:450px}.manifesto .btn{background:#f3f0e9;color:#252820;border-color:#f3f0e9;margin-top:18px}.values{display:grid;grid-template-columns:1fr 1fr;gap:26px}.value{border-top:1px solid #62695d;padding-top:18px}.value b{font-family:var(--serif);font-size:32px;color:#d18a66;font-weight:500}.value span{display:block;font-size:11px;line-height:1.6;color:#d1d2c9;margin-top:10px}.gallery{display:grid;grid-template-columns:1.1fr .9fr 1fr;grid-template-rows:220px 220px;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover}.gallery .g1{grid-row:span 2}.gallery .g3{grid-column:span 1}.gallery-note{font-size:10px;color:var(--muted);margin-top:15px}.contact{padding:80px 0 96px}.contact-box{background:#e4e0d6;padding:58px;display:grid;grid-template-columns:1fr .8fr;gap:50px;align-items:center}.contact h2{font-size:clamp(38px,5vw,62px);line-height:1.03;letter-spacing:-.07em;margin:15px 0}.contact p{color:var(--muted);font-size:12px;line-height:1.8;max-width:420px}.contact-links{display:flex;flex-direction:column;gap:12px}.contact-link{padding:18px 20px;border:1px solid #c8c3b7;display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;transition:.2s}.contact-link:hover{background:var(--white);border-color:var(--olive)}.contact-link span{color:var(--olive);font-size:18px}.footer{padding:26px 0 34px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px}.footer strong{color:var(--ink)}.demo-note{font-size:10px;color:var(--muted);line-height:1.7;max-width:430px;margin-top:16px}
-@media(max-width:800px){.wrap{width:min(100% - 36px,600px)}.header{height:72px}.nav,.head-cta{display:none}.menu{display:block}.hero{grid-template-columns:1fr;gap:28px;padding:42px 0 55px}.hero-photo{height:420px;grid-row:1}.hero-copy{font-size:13px}.hero h1{margin-top:20px}.section{padding:66px 0}.section-head{display:block}.section-intro{margin-top:16px}.products{grid-template-columns:1fr 1fr}.product-image{height:240px}.manifesto{padding:68px 0}.manifesto-inner{grid-template-columns:1fr;gap:35px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:190px 190px 190px}.gallery .g1{grid-row:span 2}.gallery .g3{grid-column:span 1}.contact-box{padding:32px 24px;grid-template-columns:1fr;gap:28px}.footer{flex-direction:column}.hero-actions{gap:16px}}
-@media(max-width:480px){.products{grid-template-columns:1fr}.product-image{height:300px}.hero-photo{height:340px}.hero-actions{align-items:flex-start;flex-direction:column}.gallery{grid-template-rows:150px 150px 150px}.manifesto h2{font-size:43px}}
+:root{--bg:#f7f6f2;--paper:#fff;--ink:#20221f;--muted:#696d67;--line:#e2e1db;--green:#344a3e;--green2:#526c5b;--red:#a54b35;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.topline{background:var(--green);color:#f4f4ee;font-size:12px}
+.topline-inner{max-width:var(--max);margin:auto;padding:9px 22px;display:flex;justify-content:space-between;gap:16px}
+.topline a{text-decoration:underline;text-underline-offset:3px}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:0 auto}
+header{background:var(--paper);border-bottom:1px solid var(--line)}
+.header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;min-width:210px}
+.logo-mark{width:39px;height:39px;background:var(--green);color:white;display:grid;place-items:center;font-size:18px;font-weight:700}
+.logo-name{font-size:17px;font-weight:800;letter-spacing:-.7px;line-height:1.05}
+.logo-name span{display:block;font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1.5px;margin-top:5px}
+nav{display:flex;gap:27px;align-items:center;font-size:13px}
+nav a{color:#454942}
+nav a:hover{color:var(--red)}
+.header-contact{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.header-contact a:first-child{font-weight:700;font-size:15px}
+.header-contact span{font-size:11px;color:var(--muted)}
+.menu{display:none;border:1px solid var(--line);background:white;padding:9px 12px}
+.hero{padding:50px 0 62px}
+.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}
+.hero-copy{padding:12px 0 12px 8px}
+.eyebrow{color:var(--red);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px}
+h1{font-size:clamp(42px,5.4vw,68px);line-height:1.02;letter-spacing:-2.7px;margin:19px 0 18px;font-weight:750}
+h1 span{color:var(--green)}
+.lead{max-width:430px;font-size:16px;line-height:1.65;color:#555b54;margin:0}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 18px;min-height:46px;background:var(--green);color:white;font-size:13px;font-weight:700;border:1px solid var(--green)}
+.btn:hover{background:var(--green2);border-color:var(--green2)}
+.btn.secondary{background:transparent;color:var(--ink);border-color:#c9cbc3}
+.btn.secondary:hover{background:white}
+.hero-media{background:#e9e9e2;border:1px solid var(--line);padding:14px}
+.media-label{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:5px 2px 13px;font-size:12px;color:var(--muted)}
+.media-label strong{color:var(--ink);font-size:13px}
+.telegram-frame{display:block;width:100%;height:430px;border:0;background:#fff}
+.note{font-size:11px;color:var(--muted);line-height:1.5;margin:11px 2px 0}
+.categories{background:var(--green);color:#fff;padding:47px 0 52px}
+.section-title{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:25px}
+.section-title h2{font-size:34px;line-height:1.1;letter-spacing:-1.2px;margin:0}
+.section-title p{max-width:380px;margin:0;color:#d5ddd6;font-size:13px;line-height:1.6}
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #748578;border-bottom:1px solid #748578}
+.category{padding:25px 22px 25px 0;border-right:1px solid #748578;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.category:not(:first-child){padding-left:22px}
+.category:last-child{border-right:0}
+.category small{display:block;color:#c5d0c7;font-size:11px;margin-bottom:8px}
+.category b{font-size:22px;letter-spacing:-.5px}
+.category a{font-size:22px;color:#d7a18e}
+.works{padding:65px 0 72px}
+.works-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}
+.works-head h2,.contacts h2{font-size:36px;letter-spacing:-1.4px;line-height:1.08;margin:0}
+.works-head p{max-width:380px;color:var(--muted);font-size:13px;line-height:1.6;margin:0}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.work-card{background:var(--paper);border:1px solid var(--line);padding:12px}
+.work-card iframe{width:100%;height:430px;border:0;display:block;background:white}
+.work-caption{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:12px 4px 4px;font-size:13px}
+.work-caption a{color:var(--green);font-weight:700}
+.contacts{background:#ecece5;padding:58px 0 63px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contacts h2{margin:12px 0 14px}
+.contact-intro{font-size:14px;line-height:1.65;color:var(--muted);max-width:450px}
+.contact-details{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.detail{padding:16px 0;border-top:1px solid #d3d5cc}
+.detail small{display:block;font-size:11px;color:var(--muted);margin-bottom:6px}
+.detail strong,.detail a{font-size:15px;font-weight:700}
+.detail a:hover{color:var(--red)}
+.contact-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.disclaimer{padding:12px 0 14px;background:#252b26;color:#dfe4dc;font-size:10px;text-align:center;letter-spacing:.2px}
+footer{background:#20251f;color:#d7dbd4}
+.footer-inner{padding:22px 0;display:flex;justify-content:space-between;gap:20px;font-size:11px}
+.footer-inner span{color:#aeb5ab}
+@media(max-width:850px){
+ .wrap{width:min(100% - 32px,var(--max))}
+ .header-inner{min-height:72px}
+ nav{display:none;position:absolute;left:16px;right:16px;top:122px;background:white;border:1px solid var(--line);padding:18px;z-index:5;flex-direction:column;align-items:flex-start;gap:17px}
+ nav.open{display:flex}
+ .menu{display:block}
+ .header-contact{margin-left:auto;margin-right:4px}
+ .hero-grid{grid-template-columns:1fr;gap:28px}
+ .hero-copy{padding:0}
+ .hero{padding-top:38px}
+ .telegram-frame{height:420px}
+ .section-title,.works-head{align-items:flex-start;flex-direction:column}
+ .category b{font-size:19px}
+ .work-grid{gap:13px}
+ .work-card iframe{height:390px}
+ .contact-grid{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:560px){
+ .topline-inner{padding:8px 16px;font-size:10px}
+ .topline-inner span:last-child{display:none}
+ .wrap{width:calc(100% - 28px)}
+ .logo{min-width:0;gap:8px}
+ .logo-mark{width:34px;height:34px}
+ .logo-name{font-size:15px}
+ .logo-name span{font-size:9px}
+ .header-contact a:first-child{font-size:12px}
+ .header-contact span{font-size:9px}
+ .hero{padding:30px 0 42px}
+ h1{font-size:47px;letter-spacing:-2px}
+ .lead{font-size:14px}
+ .actions{display:grid;grid-template-columns:1fr}
+ .btn{width:100%}
+ .hero-media{padding:8px}
+ .telegram-frame{height:390px}
+ .categories{padding:37px 0 40px}
+ .section-title h2,.works-head h2,.contacts h2{font-size:30px}
+ .category-grid{grid-template-columns:1fr}
+ .category,.category:not(:first-child){padding:16px 4px;border-right:0;border-bottom:1px solid #748578}
+ .category:last-child{border-bottom:0}
+ .category b{font-size:20px}
+ .works{padding:45px 0}
+ .work-grid{grid-template-columns:1fr}
+ .work-card iframe{height:420px}
+ .contact-details{grid-template-columns:1fr 1fr;gap:0 14px}
+ .detail strong,.detail a{font-size:13px}
+ .footer-inner{flex-direction:column;gap:8px}
+}
 </style>
 </head>
 <body>
-<div class="demo">Демонстрационная версия сайта · Концепция для «Мебель Продукт» · Не официальный сайт компании</div>
-<div class="wrap">
-<header class="header">
-<a class="brand" href="#">МЕБЕЛЬ ПРОДУКТ<span>МЯГКАЯ МЕБЕЛЬ</span></a>
-<nav class="nav"><a href="#collection">Коллекция</a><a href="#approach">Подход</a><a href="#inspiration">Интерьеры</a><a href="#contacts">Контакты</a></nav>
-<a class="head-cta" href="#contacts">Обсудить мебель <span>↗</span></a>
-<button class="menu" aria-label="Открыть меню" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+<div class="topline"><div class="topline-inner"><span>Мягкая мебель · Казань</span><span>Пн–Пт, 9:00–18:00 · <a href="tel:+79063261111">+7 (906) 326-11-11</a></span></div></div>
+<header>
+ <div class="wrap header-inner">
+  <a class="logo" href="#" aria-label="Мебель Продукт — главная"><span class="logo-mark">М</span><span class="logo-name">МЕБЕЛЬ ПРОДУКТ<span>МЯГКАЯ МЕБЕЛЬ</span></span></a>
+  <nav id="nav"><a href="#catalog">Что производим</a><a href="#works">Наши публикации</a><a href="#contacts">Контакты</a></nav>
+  <div class="header-contact"><a href="tel:+79063261111">+7 (906) 326-11-11</a><span>Екатерина · отдел продаж</span></div>
+  <button class="menu" type="button" aria-label="Открыть меню" onclick="document.getElementById('nav').classList.toggle('open')">Меню</button>
+ </div>
 </header>
 <main>
 <section class="hero">
-<div>
-<div class="eyebrow">Комфорт, который остаётся</div>
-<h1>Место для<br>вашего <em>уюта.</em></h1>
-<p class="hero-copy">Мягкая мебель задаёт настроение всему дому. Найдите форму, фактуру и характер, которые подойдут именно вашему пространству.</p>
-<div class="hero-actions"><a class="btn" href="#collection">Смотреть коллекцию <span>↗</span></a><a class="text-link" href="#contacts">Задать вопрос</a></div>
-</div>
-<div class="hero-photo"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1500&q=85" alt="Современная гостиная с мягким диваном"><span class="hero-index">01 / МЯГКАЯ МЕБЕЛЬ</span><div class="photo-tag">Форма. Фактура. Комфорт.</div></div>
+ <div class="wrap hero-grid">
+  <div class="hero-copy">
+   <div class="eyebrow">Мебель Продукт · Казань</div>
+   <h1>Диваны, кровати<br>и <span>стулья.</span></h1>
+   <p class="lead">Производим мягкую мебель. На сайте собрали основные направления и публикации с примерами изделий из нашего Telegram-канала.</p>
+   <div class="actions"><a class="btn" href="https://t.me/mebelprodukt" target="_blank" rel="noopener">Смотреть мебель в Telegram ↗</a><a class="btn secondary" href="tel:+79063261111">Позвонить Екатерине</a></div>
+  </div>
+  <div class="hero-media">
+   <div class="media-label"><strong>Из Telegram компании</strong><span>Диван «Камила»</span></div>
+   <iframe class="telegram-frame" src="https://t.me/mebelprodukt/3905?embed=1&mode=tme" title="Публикация Мебель Продукт — диван Камила" loading="lazy"></iframe>
+   <p class="note">Публикация встроена из открытого канала компании.</p>
+  </div>
+ </div>
 </section>
-<section class="section" id="collection">
-<div class="section-head"><div><div class="kicker">Выберите своё</div><h2>Коллекция для<br><em>каждого дня.</em></h2></div><p class="section-intro">Три направления, с которых можно начать знакомство с ассортиментом. Подробности о моделях и материалах уточняйте у производителя.</p></div>
-<div class="products">
-<article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1550254478-umbu0f400b8?auto=format&fit=crop&w=900&q=85" alt="Диван в современном интерьере"></div><div class="product-info"><div class="product-top"><h3>Диваны</h3><small>01 / гостиная</small></div><p>Центр пространства для отдыха, встреч и долгих разговоров.</p></div></article>
-<article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85" alt="Уютная спальня с кроватью"></div><div class="product-info"><div class="product-top"><h3>Кровати</h3><small>02 / спальня</small></div><p>Спокойная эстетика и комфорт, с которого начинается утро.</p></div></article>
-<article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=85" alt="Мягкое кресло в интерьере"></div><div class="product-info"><div class="product-top"><h3>Стулья и кресла</h3><small>03 / детали</small></div><p>Акценты, которые делают интерьер цельным и индивидуальным.</p></div></article>
-</div>
+<section class="categories" id="catalog">
+ <div class="wrap">
+  <div class="section-title"><h2>Что производим</h2><p>В официальном описании компании указаны три направления мягкой мебели.</p></div>
+  <div class="category-grid">
+   <div class="category"><div><small>01</small><b>Диваны</b></div><a href="https://t.me/mebelprodukt" target="_blank" rel="noopener" aria-label="Диваны в Telegram">↗</a></div>
+   <div class="category"><div><small>02</small><b>Кровати</b></div><a href="https://t.me/mebelprodukt" target="_blank" rel="noopener" aria-label="Кровати в Telegram">↗</a></div>
+   <div class="category"><div><small>03</small><b>Стулья</b></div><a href="https://t.me/mebelprodukt" target="_blank" rel="noopener" aria-label="Стулья в Telegram">↗</a></div>
+  </div>
+ </div>
 </section>
-</div>
-<section class="manifesto" id="approach"><div class="wrap manifesto-inner">
-<div><div class="kicker" style="color:#d18a66">О выборе мебели</div><h2>Красиво — это<br><em>когда удобно.</em></h2><p>Хорошая мебель не спорит с жизнью — она становится её частью. Важны не только силуэт и цвет, но и ощущения каждый день: как вы отдыхаете, принимаете гостей и проводите время дома.</p><a class="btn" href="#contacts">Подобрать решение <span>↗</span></a></div>
-<div class="values"><div class="value"><b>01</b><span>Продуманный силуэт — мебель становится частью интерьера.</span></div><div class="value"><b>02</b><span>Фактуры и оттенки помогают создать нужное настроение.</span></div><div class="value"><b>03</b><span>Комфорт важен не на фотографии, а в повседневной жизни.</span></div><div class="value"><b>04</b><span>Выбор начинается с ваших задач и пространства.</span></div></div>
-</div></section>
-<div class="wrap">
-<section class="section" id="inspiration">
-<div class="section-head"><div><div class="kicker">Вдохновение</div><h2>Мебель в контексте<br><em>пространства.</em></h2></div><p class="section-intro">Подборка интерьерных референсов, чтобы показать настроение и стилистику будущего сайта.</p></div>
-<div class="gallery"><img class="g1" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Светлая современная гостиная"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Интерьер с мягкой мебелью"><img class="g3" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85" alt="Детали уютного интерьера"><img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=900&q=85" alt="Гостиная с нейтральной мебелью"><img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=85" alt="Современный интерьер"></div>
-<p class="gallery-note">Изображения на этой демонстрационной странице — визуальные референсы, не подтверждённые фотографии работ компании.</p>
+<section class="works" id="works">
+ <div class="wrap">
+  <div class="works-head"><h2>Мебель в публикациях</h2><p>Здесь отображаются реальные посты из Telegram-канала «Мебель Продукт». Так посетитель может увидеть изделия и перейти к оригинальным публикациям.</p></div>
+  <div class="work-grid">
+   <article class="work-card"><iframe src="https://t.me/mebelprodukt/3905?embed=1&mode=tme" title="Диван Камила — Telegram Мебель Продукт" loading="lazy"></iframe><div class="work-caption"><strong>Диван «Камила»</strong><a href="https://t.me/mebelprodukt/3905" target="_blank" rel="noopener">Открыть пост ↗</a></div></article>
+   <article class="work-card"><iframe src="https://t.me/mebelprodukt/3907?embed=1&mode=tme" title="Ринатти — Telegram Мебель Продукт" loading="lazy"></iframe><div class="work-caption"><strong>«Ринатти»</strong><a href="https://t.me/mebelprodukt/3907" target="_blank" rel="noopener">Открыть пост ↗</a></div></article>
+  </div>
+  <p class="note">Сами публикации и изображения принадлежат компании и загружаются из её открытого Telegram-канала. Если встроенный просмотр недоступен, используйте ссылку «Открыть пост».</p>
+ </div>
 </section>
-<section class="contact" id="contacts"><div class="contact-box"><div><div class="kicker">Связаться с компанией</div><h2>Давайте найдём<br><em>ваш вариант.</em></h2><p>Расскажите, какая мебель вам нужна. Уточните доступные модели, размеры, материалы и условия заказа напрямую у представителей компании.</p><p class="demo-note">Контактные ссылки добавлены для демонстрации и перед публикацией должны быть подтверждены владельцем компании.</p></div><div class="contact-links"><a class="contact-link" href="https://t.me/mebelprodukt" target="_blank" rel="noopener">Telegram-канал <span>↗</span></a><a class="contact-link" href="https://t.me/Albert_Idrisovv" target="_blank" rel="noopener">Связаться в Telegram <span>↗</span></a><a class="contact-link" href="https://vk.com/mebelprodukt" target="_blank" rel="noopener">ВКонтакте <span>↗</span></a></div></div></section>
-</div>
+<section class="contacts" id="contacts">
+ <div class="wrap contact-grid">
+  <div><div class="eyebrow">Связаться с нами</div><h2>Подскажем по моделям<br>и заказу.</h2><p class="contact-intro">Уточнить наличие, варианты исполнения и условия заказа можно напрямую у представителей компании.</p><div class="contact-buttons"><a class="btn" href="https://t.me/Albert_Idrisovv" target="_blank" rel="noopener">Написать в Telegram ↗</a><a class="btn secondary" href="https://t.me/mebelprodukt" target="_blank" rel="noopener">Канал компании</a></div></div>
+  <div class="contact-details">
+   <div class="detail"><small>Телефон</small><a href="tel:+79063261111">+7 (906) 326-11-11</a><small>Екатерина</small></div>
+   <div class="detail"><small>Адрес</small><strong>Казань, ул. Профессора Мухамедьярова, 30</strong></div>
+   <div class="detail"><small>График</small><strong>Пн–Пт · 9:00–18:00</strong></div>
+   <div class="detail"><small>Выходные</small><strong>Суббота и воскресенье</strong></div>
+  </div>
+ </div>
+</section>
 </main>
-<footer class="wrap footer"><div><strong>МЕБЕЛЬ ПРОДУКТ</strong> · Мягкая мебель</div><div>Демонстрационная концепция · Не официальный сайт</div><div>© 2026</div></footer>
+<div class="disclaimer">Демонстрационный концепт сайта для «Мебель Продукт». Не официальный сайт компании.</div>
+<footer><div class="wrap footer-inner"><strong>МЕБЕЛЬ ПРОДУКТ</strong><span>Мягкая мебель · Казань</span><span>© 2026 · Демо-концепция</span></div></footer>
 <script>
-const nav=document.querySelector('.nav');document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const menu=document.getElementById('nav');
+menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>menu.classList.remove('open')));
 </script>
-<style>@media(max-width:800px){.nav.open{display:flex;position:absolute;z-index:10;top:118px;left:18px;right:18px;background:var(--white);padding:22px;flex-direction:column;gap:18px;box-shadow:0 12px 30px #2222}}</style>
 </body>
 </html>
